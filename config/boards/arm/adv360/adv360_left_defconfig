@@ -3,6 +3,14 @@
 # SPDX-License-Identifier: MIT
 #
 
+# Miguel -> Testing not waking up the computer
+# Seconds - 15 minutes
+CONFIG_ZMK_BATTERY_REPORT_INTERVAL=900 
+CONFIG_ZMK_SLEEP=y
+# Miliseconds - 10 minutes
+CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=600000 
+# Miguel <- End
+
 CONFIG_SOC_SERIES_NRF52X=y
 CONFIG_SOC_NRF52840_QIAA=y
 CONFIG_BOARD_ADV360_LEFT=y
